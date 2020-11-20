@@ -20,7 +20,7 @@
         <activity android:name=".Activity.Admin.Admin_List_Student"></activity>
         <activity android:name=".Activity.Admin.Admin_Student_List" />
         <activity android:name=".Activity.Admin.Student.Detail_Student_Admin"></activity>
-        <activity android:name=".Activity.Admin.Admin_List_Student" />
+
         <activity android:name=".Activity.Admin.Admin_Create_Teacher" />
         <activity android:name=".Activity.Admin.Admin_Edit_Class" />
         <activity android:name=".Activity.Admin.Admin_List_Class" />
