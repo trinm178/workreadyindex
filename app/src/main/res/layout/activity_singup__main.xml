@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    tools:context=".Activity.Singup_Main"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="-10dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/square"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hlv"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="SIGN UP AS"
+            android:textColor="#FAF8F8"
+            android:textSize="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_signup_as_student"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:elevation="5dp"
+            android:text="STUDENT"
+            android:textAllCaps="false"
+            android:textColor="#FFFBF8"
+            android:textSize="20dp"
+            android:fontFamily="@font/hlv"
+            android:textStyle="bold"
+            />
+
+
+        <Button
+            android:id="@+id/btn_signup_as_teacher"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:elevation="5dp"
+            android:text="TEACHER"
+            android:textAllCaps="false"
+            android:textColor="#FFFBF8"
+            android:textSize="20dp"
+            android:fontFamily="@font/hlv"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_signup_as_admin"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:elevation="5dp"
+            android:text="ADMIN"
+            android:textAllCaps="false"
+            android:textColor="#FFFBF8"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/btn_signup_as_company"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:elevation="5dp"
+            android:text="COMPANY"
+            android:textAllCaps="false"
+            android:textColor="#FFFBF8"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/hlv"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_app2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/logoapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.891"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
