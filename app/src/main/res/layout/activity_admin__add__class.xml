@@ -50,7 +50,7 @@
     <ScrollView
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="700dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,52 +88,52 @@
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_margin="10dp"
-                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <EditText
-                    android:padding="15dp"
-                    android:background="@drawable/custtom_edt"
-                    android:layout_marginTop="10dp"
                     android:id="@+id/edt_name_addclass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nhập tên lớp"/>
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_shadow"
+                    android:hint="Nhập tên lớp"
+                    android:padding="15dp" />
 
                 <EditText
-                    android:padding="15dp"
-                    android:background="@drawable/custtom_edt"
-                    android:layout_marginTop="10dp"
                     android:id="@+id/edt_code_addclass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nhập mã lớp"/>
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_shadow"
+                    android:hint="Nhập mã lớp"
+                    android:padding="15dp" />
 
 
                 <EditText
-                    android:padding="15dp"
-                    android:background="@drawable/custtom_edt"
-                    android:layout_marginTop="10dp"
                     android:id="@+id/edt_maxstudent_addclass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_shadow"
                     android:hint="Nhập số lượng tối đa"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:padding="15dp" />
 
                 <EditText
-                    android:padding="15dp"
-                    android:background="@drawable/custtom_edt"
-                    android:layout_marginTop="10dp"
                     android:id="@+id/edt_description_addclass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_shadow"
+                    android:gravity="left"
                     android:hint="Nhập mô tả"
-                    android:maxLines="10"
-                    android:lines="10"
-                    android:gravity="left"/>
+                    android:lines="7"
+                    android:maxLines="7"
+                    android:padding="15dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

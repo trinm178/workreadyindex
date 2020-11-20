@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.Admin.Admin_Company_List"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#fff">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBarUser"
         android:layout_width="match_parent"
