@@ -16,12 +16,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
+            android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/adt_img_student_listallstudent"
+
+                android:id="@+id/adt_img_listteacher"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="16dp"
@@ -32,34 +33,19 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/adt_tv_namestudent_listallstudent"
+                android:layout_gravity="center"
+                android:id="@+id/adt_admin_listteacher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Tên Học viên"
+                android:layout_marginLeft="18dp"
+                android:text="Tên giảng viên"
                 android:textColor="#000"
                 android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/adt_img_student_listallstudent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.159" />
+                />
 
-            <TextView
-                android:id="@+id/adt_tv_codestudent_listallstudent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:text="MHV"
-                android:textColor="#000"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/adt_img_student_listallstudent"
-                app:layout_constraintTop_toBottomOf="@+id/adt_tv_namestudent_listallstudent"
-                app:layout_constraintVertical_bias="0.0" />
+        </LinearLayout>
 
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.example.wri.R;
@@ -28,6 +30,10 @@ public class Company_Detail_Student extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // set fullscreen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_company_detail__student);
         viewPager = findViewById(R.id.view_pager);
         tabLayout = findViewById(R.id.tab_layout);

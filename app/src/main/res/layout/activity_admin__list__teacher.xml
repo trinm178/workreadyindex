@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Activity.Admin.Admin_List_Class"
-    android:background="#fff">
+    tools:context=".Activity.Admin.Admin_List_Teacher">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBarUser"
         android:layout_width="match_parent"
@@ -26,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/alfa_slab_one"
-                android:text="DANH SÁCH LỚP HỌC"
+                android:text="DANH SÁCH GIẢNG VIÊN"
                 android:textColor="#fff"
                 android:textSize="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +54,7 @@
         android:layout_margin="15dp">
         <EditText
             android:layout_weight="5"
-            android:id="@+id/search_admin_listcompany"
+            android:id="@+id/search_admin_listTeacher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custtom_edt"
@@ -67,8 +65,6 @@
             android:textColor="#000"
             android:hint="Tìm kiếm ..."
             android:drawableRight="@drawable/ic_search"
-            android:drawableTint="#fff"
-
             />
         <ImageView
             android:layout_weight="1"
@@ -77,36 +73,20 @@
             android:layout_height="match_parent"
             android:layout_below="@id/toolBarUser"
             android:src="@drawable/ic_sort"
-
             android:layout_marginRight="25dp"
             ></ImageView>
     </LinearLayout>
     <ScrollView
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_below="@+id/ln1">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv_admin_listClass"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/ln1"
-        android:layout_marginTop="5dp"
-        android:padding="10dp"/>
+        android:layout_below="@+id/ln1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_admin_listTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ln1"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"/>
     </ScrollView>
-    <Button
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:id="@+id/btn_create_class_adminlist"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Tạo lớp"
-        android:textSize="20dp"
-        android:fontFamily="@font/hlv"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/custtom_button"
-        android:textColor="#ffffff"
-        android:textAllCaps="false"
-        android:layout_margin="10dp"/>
-</LinearLayout>
+</RelativeLayout>

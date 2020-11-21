@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="fill"
         app:cardCornerRadius="10dp"
-        app:cardElevation="8dp"
+        app:cardElevation="2dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -28,19 +28,20 @@
                 android:layout_marginStart="16dp"
                 android:background="@mipmap/ic_appwri"
                />
-        <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/adt_edt_namestudent_listallstudent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tên Lớp"
-                android:textColor="#000"
-                android:textSize="18dp"
-                />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/adt_edt_namestudent_listallstudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Lớp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    />
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -56,7 +57,6 @@
                         />
 
                     <TextView
-                        android:id="@+id/tv1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="/"
@@ -74,53 +74,9 @@
                         ></TextView>
                 </LinearLayout>
 
+            </LinearLayout>
         </LinearLayout>
 
-                android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/adt_img_student_listallstudent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.159" />
-
-            <TextView
-                android:id="@+id/adt_edt_current_listclass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:text="0"
-                android:textColor="#000"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/adt_img_student_listallstudent"
-                app:layout_constraintTop_toBottomOf="@+id/adt_edt_namestudent_listallstudent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/tv1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="8dp"
-                android:text="/"
-                android:textColor="#000"
-                android:textSize="15dp"
-                app:layout_constraintStart_toEndOf="@+id/adt_edt_current_listclass"
-                app:layout_constraintTop_toBottomOf="@+id/adt_edt_namestudent_listallstudent" />
-
-            <TextView
-                android:id="@+id/adt_edt_maxclass_listclass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="32"
-                android:textColor="#000"
-                android:textSize="15dp"
-                android:layout_marginStart="2dp"
-                app:layout_constraintStart_toEndOf="@+id/tv1"
-                app:layout_constraintTop_toBottomOf="@+id/adt_edt_namestudent_listallstudent" />
-
-        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

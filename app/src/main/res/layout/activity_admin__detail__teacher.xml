@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    tools:context=".Activity.Admin.Admin_Detail_Teacher"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarUser"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorGreen">
 
-    <!-- TODO: Update blank fragment layout -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <TextView
+                android:id="@+id/txtMucLuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Sửa giảng viên"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:onClick="onBack"
+                android:id="@+id/id_back_admin_company_list"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
     <ScrollView
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -58,9 +98,9 @@
                 app:boxCornerRadiusBottomStart="20dp"
                 app:boxCornerRadiusTopEnd="20dp"
                 app:boxCornerRadiusTopStart="20dp"
-                app:boxStrokeColor="@color/colorPrimary">
+                app:boxStrokeColor="@color/colorGreen">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_name_student_detailadminf"
+                    android:id="@+id/tv_name_teacher_detailadminf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="16dp"
@@ -78,13 +118,13 @@
                 app:boxCornerRadiusBottomStart="20dp"
                 app:boxCornerRadiusTopEnd="20dp"
                 app:boxCornerRadiusTopStart="20dp"
-                app:boxStrokeColor="@color/colorPrimary">
+                app:boxStrokeColor="@color/colorGreen">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_codestudent_detailstudentf"
+                    android:id="@+id/tv_code_teacher_detailstudentf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="16dp"
-                    android:hint="Mã học viên"
+                    android:hint="Mã giảng viên"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -98,15 +138,16 @@
                 app:boxCornerRadiusBottomStart="20dp"
                 app:boxCornerRadiusTopEnd="20dp"
                 app:boxCornerRadiusTopStart="20dp"
-                app:boxStrokeColor="@color/colorPrimary">
+                app:boxStrokeColor="@color/colorGreen">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_birthday_student_detailadminf"
+                    android:id="@+id/tv_birthday_teacher_detailadminf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="16dp"
                     android:hint="Ngày sinh"
                     />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
@@ -118,29 +159,9 @@
                 app:boxCornerRadiusBottomStart="20dp"
                 app:boxCornerRadiusTopEnd="20dp"
                 app:boxCornerRadiusTopStart="20dp"
-                app:boxStrokeColor="@color/colorPrimary">
+                app:boxStrokeColor="@color/colorGreen">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_major_detailstudentf"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="16dp"
-                    android:hint="Chuyên ngành"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusTopStart="20dp"
-                app:boxStrokeColor="@color/colorPrimary">
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_email_detailstudentf"
+                    android:id="@+id/tv_email_teacher_detailadminf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="16dp"
@@ -160,11 +181,31 @@
                 app:boxCornerRadiusTopStart="20dp"
                 app:boxStrokeColor="@color/colorPrimary">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tv_phone_detailstudentf"
+                    android:id="@+id/tv_phone_teacher_detailadminf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="16dp"
                     android:hint="Số điện thoại"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="32dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeColor="@color/colorGreen">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_describe_teacher_detailadminf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16dp"
+                    android:hint="Mô tả"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <Button
@@ -182,7 +223,6 @@
                 android:textColor="#ffffff"
                 android:textAllCaps="false"/>
         </LinearLayout>
-
-
     </ScrollView>
-</FrameLayout>
+
+</LinearLayout>

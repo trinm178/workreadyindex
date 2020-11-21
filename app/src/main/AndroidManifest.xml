@@ -17,11 +17,16 @@
         android:roundIcon="@mipmap/ic_appwri"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Admin.Admin_List_Student"></activity>
-        <activity android:name=".Activity.Admin.Admin_Student_List" />
-        <activity android:name=".Activity.Admin.Student.Detail_Student_Admin"></activity>
+        <activity android:name=".Activity.Admin.Admin_Detail_Teacher">
 
-        <activity android:name=".Activity.Admin.Admin_Create_Teacher" />
+        </activity>
+        <activity android:name=".Activity.Admin.Admin_List_Teacher" />
+        <activity android:name=".Activity.Admin.Admin_List_Student" />
+        <activity android:name=".Activity.Admin.Admin_Student_List" />
+        <activity android:name=".Activity.Admin.Student.Detail_Student_Admin" />
+        <activity android:name=".Activity.Admin.Admin_Create_Teacher" >
+
+        </activity>
         <activity android:name=".Activity.Admin.Admin_Edit_Class" />
         <activity android:name=".Activity.Admin.Admin_List_Class" />
         <activity android:name=".Activity.Admin.Admin_Add_Class" />
@@ -55,7 +60,7 @@
 
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat" />
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
     </application>
 
 </manifest>

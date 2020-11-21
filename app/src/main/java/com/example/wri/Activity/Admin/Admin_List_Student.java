@@ -17,6 +17,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.wri.Adapter.Admin_List_AllStudent_Adapter;
 import com.example.wri.Adapter.Admin_listClass_Adapter;
@@ -40,6 +43,10 @@ public class Admin_List_Student extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // set fullscreen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_admin__list__student);
         init();
         Getdata();
@@ -66,5 +73,9 @@ public class Admin_List_Student extends AppCompatActivity {
 
     private void init() {
         rcv_admin_liststudent = findViewById(R.id.rcv_admin_listStudent);
+    }
+
+    public void onBack(View view) {
+        finish();
     }
 }

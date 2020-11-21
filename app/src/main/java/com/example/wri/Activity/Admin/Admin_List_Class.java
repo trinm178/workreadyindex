@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.wri.Adapter.Admin_listClass_Adapter;
@@ -30,6 +32,10 @@ public class Admin_List_Class extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // set fullscreen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_admin__list__class);
         init();
         Getdata();
@@ -63,5 +69,9 @@ public class Admin_List_Class extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void onBack(View view) {
+        finish();
     }
 }

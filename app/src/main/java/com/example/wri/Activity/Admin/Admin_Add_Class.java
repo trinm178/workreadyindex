@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -50,6 +52,10 @@ public class Admin_Add_Class extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // set fullscreen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_admin__add__class);
         edt_name_addclass = findViewById(R.id.edt_name_addclass);
         edt_code_addclass = findViewById(R.id.edt_code_addclass);
@@ -170,5 +176,9 @@ public class Admin_Add_Class extends AppCompatActivity {
                 Exception error = result.getError();
             }
         }
+    }
+
+    public void onBack(View view) {
+        finish();
     }
 }
