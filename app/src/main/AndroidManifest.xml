@@ -17,16 +17,14 @@
         android:roundIcon="@mipmap/ic_appwri"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Admin.Admin_Detail_Teacher">
-
-        </activity>
+        <activity android:name=".Activity.Admin.Admin_Recruitment_Company"></activity>
+        <activity android:name=".Activity.Admin.Admin_Detail_Company" />
+        <activity android:name=".Activity.Admin.Admin_Detail_Teacher" />
         <activity android:name=".Activity.Admin.Admin_List_Teacher" />
         <activity android:name=".Activity.Admin.Admin_List_Student" />
         <activity android:name=".Activity.Admin.Admin_Student_List" />
         <activity android:name=".Activity.Admin.Student.Detail_Student_Admin" />
-        <activity android:name=".Activity.Admin.Admin_Create_Teacher" >
-
-        </activity>
+        <activity android:name=".Activity.Admin.Admin_Create_Teacher" />
         <activity android:name=".Activity.Admin.Admin_Edit_Class" />
         <activity android:name=".Activity.Admin.Admin_List_Class" />
         <activity android:name=".Activity.Admin.Admin_Add_Class" />

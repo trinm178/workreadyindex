@@ -10,7 +10,7 @@
         android:color="#a4a2a2" >
     </stroke>
 
-    <corners android:radius="100px">
+    <corners android:radius="50px">
 
     </corners>
 
