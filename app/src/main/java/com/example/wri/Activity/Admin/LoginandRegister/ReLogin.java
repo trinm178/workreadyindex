@@ -1,6 +1,5 @@
-package com.example.wri.Activity;
+package com.example.wri.Activity.Admin.LoginandRegister;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,13 +8,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.wri.Activity.Company.Company_Main;
-import com.example.wri.Activity.Student.Student_Main;
 import com.example.wri.R;
 
 

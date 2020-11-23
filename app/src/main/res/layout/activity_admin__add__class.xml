@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Admin.Admin_Add_Class"
+    tools:context=".Activity.Admin.Class.Admin_Add_Class"
     android:orientation="vertical">
 
 
@@ -65,7 +65,7 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/profile_image_teacher_admincreate"
+                    android:id="@+id/img_edit_student_admin"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_centerHorizontal="true"
@@ -77,8 +77,8 @@
                     android:id="@+id/btn_pick_addclass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/profile_image_teacher_admincreate"
-                    android:layout_alignRight="@id/profile_image_teacher_admincreate"
+                    android:layout_alignTop="@id/img_edit_student_admin"
+                    android:layout_alignRight="@id/img_edit_student_admin"
                     android:layout_marginTop="-4dp"
                     android:layout_marginRight="-4dp"
                     android:background="@drawable/yellow_circle_bg"

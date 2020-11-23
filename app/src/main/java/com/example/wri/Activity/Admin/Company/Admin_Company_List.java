@@ -1,4 +1,4 @@
-package com.example.wri.Activity.Admin;
+package com.example.wri.Activity.Admin.Company;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.view.WindowManager;
 
 import com.example.wri.R;
 
-public class Admin_Edit_Class extends AppCompatActivity {
+public class Admin_Company_List extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,8 @@ public class Admin_Edit_Class extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_admin__edit__class);
+        setContentView(R.layout.activity_admin__company__list);
+
     }
 
     public void onBack(View view) {

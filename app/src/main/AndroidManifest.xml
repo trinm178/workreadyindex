@@ -17,18 +17,18 @@
         android:roundIcon="@mipmap/ic_appwri"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Admin.Admin_Recruitment_Company"></activity>
-        <activity android:name=".Activity.Admin.Admin_Detail_Company" />
-        <activity android:name=".Activity.Admin.Admin_Detail_Teacher" />
-        <activity android:name=".Activity.Admin.Admin_List_Teacher" />
-        <activity android:name=".Activity.Admin.Admin_List_Student" />
-        <activity android:name=".Activity.Admin.Admin_Student_List" />
+        <activity android:name=".Activity.Admin.Company.Admin_Recruitment_Company"></activity>
+        <activity android:name=".Activity.Admin.Company.Admin_Detail_Company" />
+        <activity android:name=".Activity.Admin.Teacher.Admin_Detail_Teacher" />
+        <activity android:name=".Activity.Admin.Teacher.Admin_List_Teacher" />
+        <activity android:name=".Activity.Admin.Student.Admin_List_Student" />
+        <activity android:name=".Activity.Admin.Student.Admin_Student_List" />
         <activity android:name=".Activity.Admin.Student.Detail_Student_Admin" />
-        <activity android:name=".Activity.Admin.Admin_Create_Teacher" />
-        <activity android:name=".Activity.Admin.Admin_Edit_Class" />
-        <activity android:name=".Activity.Admin.Admin_List_Class" />
-        <activity android:name=".Activity.Admin.Admin_Add_Class" />
-        <activity android:name=".Activity.Admin.Admin_Company_List" />
+        <activity android:name=".Activity.Admin.Teacher.Admin_Create_Teacher" />
+        <activity android:name=".Activity.Admin.Class.Admin_Edit_Class" />
+        <activity android:name=".Activity.Admin.Class.Admin_List_Class" />
+        <activity android:name=".Activity.Admin.Class.Admin_Add_Class" />
+        <activity android:name=".Activity.Admin.Company.Admin_Company_List" />
         <activity android:name=".Activity.Admin.Admin_Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,17 +39,17 @@
         <activity android:name=".Activity.Company.Company_Add_Search_Desc" />
         <activity android:name=".Activity.Company.Company_Specialize_List_Student" />
         <activity android:name=".Activity.Company.Company_Detail_Student" />
-        <activity android:name=".Activity.Signup_as_company" />
+        <activity android:name=".Activity.Admin.LoginandRegister.Signup_as_company" />
         <activity android:name=".Activity.Company.Company_Search_Specialize_Main" />
         <activity android:name=".Activity.Student.Detail_item_student" />
         <activity android:name=".Activity.Teacher.Menu_class_teacher" />
         <activity android:name=".Activity.Teacher.Detail_item_teacher" />
         <activity android:name=".Activity.Company.Company_Main" />
         <activity android:name=".Activity.Teacher.Main_Teachers" />
-        <activity android:name=".Activity.Signup_as_student" />
-        <activity android:name=".Activity.Singup_Main" />
-        <activity android:name=".Activity.ReLogin" />
-        <activity android:name=".Activity.Login" />
+        <activity android:name=".Activity.Admin.LoginandRegister.Signup_as_student" />
+        <activity android:name=".Activity.Admin.LoginandRegister.Singup_Main" />
+        <activity android:name=".Activity.Admin.LoginandRegister.ReLogin" />
+        <activity android:name=".Activity.Admin.LoginandRegister.Login" />
         <activity android:name=".Activity.Student.Student_Main" />
 
         <meta-data

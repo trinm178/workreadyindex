@@ -1,31 +1,20 @@
-package com.example.wri.Activity.Admin;
+package com.example.wri.Activity.Admin.Student;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.example.wri.Activity.Student.Student_Main;
 import com.example.wri.R;
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.wri.Adapter.Admin_List_AllStudent_Adapter;
-import com.example.wri.Adapter.Admin_listClass_Adapter;
-import com.example.wri.Model.Classs;
 import com.example.wri.Model.Students;
-import com.example.wri.R;
 import com.example.wri.Service.APIService;
 import com.example.wri.Service.DataService;
 

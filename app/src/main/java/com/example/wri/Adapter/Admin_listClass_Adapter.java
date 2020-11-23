@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wri.Activity.Admin.Admin_Edit_Class;
+import com.example.wri.Activity.Admin.Class.Admin_Edit_Class;
 import com.example.wri.Model.Classs;
 import com.example.wri.R;
 import com.squareup.picasso.Picasso;

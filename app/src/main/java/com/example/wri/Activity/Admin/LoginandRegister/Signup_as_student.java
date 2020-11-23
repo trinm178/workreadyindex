@@ -1,11 +1,10 @@
-package com.example.wri.Activity;
+package com.example.wri.Activity.Admin.LoginandRegister;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -20,7 +19,6 @@ import com.example.wri.Service.APIService;
 import com.example.wri.Service.DataService;
 
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

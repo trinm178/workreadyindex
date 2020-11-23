@@ -1,4 +1,4 @@
-package com.example.wri.Activity;
+package com.example.wri.Activity.Admin.LoginandRegister;
 
 import androidx.appcompat.app.AppCompatActivity;
 

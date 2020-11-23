@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Admin.Admin_Detail_Teacher"
+    tools:context=".Activity.Admin.Teacher.Admin_Detail_Teacher"
     android:orientation="vertical"
     android:background="#FFF">
     <androidx.appcompat.widget.Toolbar

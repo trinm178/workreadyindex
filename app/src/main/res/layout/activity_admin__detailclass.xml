@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Admin.Student.Admin_List_Student"
+    tools:context=".Activity.Admin.Class.Admin_Detail_Class"
     android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
@@ -34,7 +34,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:onClick="onBack"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:background="@drawable/ic_arrow_back"

@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wri.Activity.Admin.Admin_Company_List;
+import com.example.wri.Activity.Admin.Company.Admin_Company_List;
 import com.example.wri.Model.Companys;
 import com.example.wri.R;
 

@@ -1,4 +1,4 @@
-package com.example.wri.Activity.Admin;
+package com.example.wri.Activity.Admin.Teacher;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

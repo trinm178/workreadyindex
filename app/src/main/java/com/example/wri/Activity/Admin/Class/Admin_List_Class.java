@@ -1,4 +1,4 @@
-package com.example.wri.Activity.Admin;
+package com.example.wri.Activity.Admin.Class;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.wri.Adapter.Admin_listClass_Adapter;
@@ -32,17 +30,13 @@ public class Admin_List_Class extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // set fullscreen
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_admin__list__class);
         init();
         Getdata();
         btn_create_class_adminlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Admin_Add_Class.class));
+                startActivity(new Intent(getApplicationContext(), Admin_Add_Class.class));
             }
         });
     }

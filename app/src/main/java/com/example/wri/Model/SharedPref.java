@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
-import com.example.wri.Activity.Login;
+import com.example.wri.Activity.Admin.LoginandRegister.Login;
 
 public class SharedPref {//Storage File
     public static final String SHARED_PREF_NAME = "larntech";

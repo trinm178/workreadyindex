@@ -9,6 +9,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
+import com.example.wri.Activity.Admin.Class.Admin_List_Class;
+import com.example.wri.Activity.Admin.Company.Admin_Company_List;
+import com.example.wri.Activity.Admin.Student.Admin_List_Student;
+import com.example.wri.Activity.Admin.Teacher.Admin_Create_Teacher;
 import com.example.wri.R;
 
 public class Admin_Main extends AppCompatActivity {
@@ -26,25 +30,25 @@ public class Admin_Main extends AppCompatActivity {
         ln_admin_class.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Admin_Main.this,Admin_List_Class.class));
+                startActivity(new Intent(Admin_Main.this, Admin_List_Class.class));
             }
         });
         ln_admin_teacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Admin_Main.this,Admin_Create_Teacher.class));
+                startActivity(new Intent(Admin_Main.this, Admin_Create_Teacher.class));
             }
         });
         ln_admin_company.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Admin_Main.this,Admin_Company_List.class));
+                startActivity(new Intent(Admin_Main.this, Admin_Company_List.class));
             }
         });
         ln_admin_student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Admin_Main.this,Admin_List_Student.class));
+                startActivity(new Intent(Admin_Main.this, Admin_List_Student.class));
             }
         });
     }

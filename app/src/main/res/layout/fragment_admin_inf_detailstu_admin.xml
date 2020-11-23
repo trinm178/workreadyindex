@@ -24,7 +24,7 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/profile_image_teacher_admincreate"
+                    android:id="@+id/profile_image_student_admincreate"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_centerHorizontal="true"
@@ -36,8 +36,8 @@
                     android:id="@+id/btn_pick_addteacher"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/profile_image_teacher_admincreate"
-                    android:layout_alignRight="@id/profile_image_teacher_admincreate"
+                    android:layout_alignTop="@id/profile_image_student_admincreate"
+                    android:layout_alignRight="@id/profile_image_student_admincreate"
                     android:layout_marginTop="-4dp"
                     android:layout_marginRight="-4dp"
                     android:background="@drawable/yellow_circle_bg"

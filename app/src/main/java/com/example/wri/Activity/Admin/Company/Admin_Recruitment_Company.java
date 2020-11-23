@@ -1,4 +1,4 @@
-package com.example.wri.Activity.Admin;
+package com.example.wri.Activity.Admin.Company;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,12 +7,12 @@ import android.view.View;
 
 import com.example.wri.R;
 
-public class Admin_Detail_Company extends AppCompatActivity {
+public class Admin_Recruitment_Company extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin__detail__company);
+        setContentView(R.layout.activity_admin__recruitment__company);
     }
 
     public void onBack(View view) {

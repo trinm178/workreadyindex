@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Signup_as_company">
+    tools:context=".Activity.Admin.LoginandRegister.Signup_as_company">
 
     <LinearLayout
         android:layout_width="match_parent"

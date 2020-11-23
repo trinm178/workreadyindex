@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Admin.Admin_List_Student"
+    tools:context=".Activity.Admin.Student.Admin_List_Student"
     android:background="#fff">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBarUser"
